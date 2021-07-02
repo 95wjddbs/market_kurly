@@ -198,7 +198,7 @@ const Home = props => {
       {/* 0702 특가/혜택 > */}
       <View
         style={{
-          backgroundColor: '#E1EAFA',
+          backgroundColor: '#EEF0FF',
           width: '100%',
           height: 500,
           marginTop: 28,
@@ -428,7 +428,7 @@ const Home = props => {
             height: 60,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: '#E1EAFA',
+            backgroundColor: '#EEF0FF',
           }}>
           <Text>채소 전체 보기</Text>
         </TouchableOpacity>
@@ -485,6 +485,153 @@ const Home = props => {
         </View>
       </View>
 
+      {/* 주방용품 특가 */}
+      <View
+        style={{
+          marginLeft: 10,
+          marginTop: 28,
+          backgroundColor: '#EEF0FF',
+          width: '100%',
+          height: 780,
+          paddingTop: 28,
+        }}>
+        <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+          KURLY's PICK! 주방용품 특가
+        </Text>
+
+        <View style={{width: '100%', flexDirection: 'row', marginTop: 10}}>
+          <View style={{width: '43%'}}>
+            <Image
+              source={require('../images/kitchenItem1.jpg')}
+              style={[styles.coverImage, {width: '100%', height: 255}]}
+            />
+            <Text>[스카이락] 물빠짐 보관용기 4종</Text>
+            <Text>
+              15% <Text>3,400원</Text>
+            </Text>
+            <Text style={{fontSize: 10}}>19,900원</Text>
+          </View>
+
+          <View style={[styles.Itemview]}>
+            <Image
+              source={require('../images/kitchenItem3.jpg')}
+              style={{resizeMode: 'cover', width: '100%', height: 255}}
+            />
+            <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+            <Text>7,200원</Text>
+          </View>
+
+          <View style={[styles.Itemview]}>
+            <Image
+              source={require('../images/kitchenItem2.jpg')}
+              style={[styles.coverImage, {width: '100%', height: 255}]}
+            />
+            <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+            <Text>7,200원</Text>
+          </View>
+        </View>
+
+        {/* 365일 최저가 도전 */}
+        <View style={{marginTop: 60}}>
+          <Text style={{fontSize: 16, fontWeight: 'bold'}}>
+            365일 최저가 도전
+          </Text>
+          <Text style={{color: 'grey', fontSize: 13}}>
+            최저가 도전, 365일 언제나 알뜰하게
+          </Text>
+
+          <View style={{width: '100%', flexDirection: 'row', marginTop: 10}}>
+            <View style={{width: '43%'}}>
+              <Image
+                source={require('../images/item2.jpg')}
+                style={[styles.coverImage, {width: '100%', height: 255}]}
+              />
+              <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+              <Text>7,200원</Text>
+            </View>
+
+            <View style={[styles.Itemview]}>
+              <Image
+                source={require('../images/item6.jpg')}
+                style={{resizeMode: 'cover', width: '100%', height: 255}}
+              />
+              <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+              <Text>7,200원</Text>
+            </View>
+
+            <View style={[styles.Itemview]}>
+              <Image
+                source={require('../images/item3.jpg')}
+                style={[styles.coverImage, {width: '100%', height: 255}]}
+              />
+              <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+              <Text>7,200원</Text>
+            </View>
+          </View>
+        </View>
+      </View>
+
+      {/* 시원한 여름 */}
+      <View style={{marginTop: 60, marginLeft: 10}}>
+        <Text style={{fontSize: 16, fontWeight: 'bold'}}>시원한 여름</Text>
+        <Text style={{color: 'grey', fontSize: 13}}>
+          여름의 열기를 식혀줄 별미부터 가전까지
+        </Text>
+
+        <View style={{width: '100%', flexDirection: 'row', marginTop: 10}}>
+          <View style={{width: '43%'}}>
+            <Image
+              source={require('../images/summerItem2.jpg')}
+              style={[styles.coverImage, {width: '100%', height: 255}]}
+            />
+            <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+            <Text>6,000원</Text>
+          </View>
+
+          <View style={[styles.Itemview]}>
+            <Image
+              source={require('../images/summerItem3.jpg')}
+              style={{resizeMode: 'cover', width: '100%', height: 255}}
+            />
+            <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+            <Text>7,200원</Text>
+          </View>
+
+          <View style={[styles.Itemview]}>
+            <Image
+              source={require('../images/summerItem1.jpg')}
+              style={[styles.coverImage, {width: '100%', height: 255}]}
+            />
+            <Text>[KF365] 1+등급 무항생제 특란20구</Text>
+            <Text>7,200원</Text>
+          </View>
+        </View>
+      </View>
+
+      {/* 컬리의 레시피 */}
+      <View style={{marginTop: 80, marginLeft: 10}}>
+        <Text style={{fontSize: 16, fontWeight: 'bold'}}>컬리의 레시피</Text>
+
+        <View style={{width: '100%', flexDirection: 'row'}}>
+          <Image
+            source={require('../images/recipeItem2.jpg')}
+            style={[styles.coverImage, {width: '60%', height: 150}]}
+          />
+          <Image
+            source={require('../images/recipeItem1.jpg')}
+            style={[
+              styles.coverImage,
+              {width: '60%', height: 150, marginLeft: 8},
+            ]}
+          />
+        </View>
+
+        <View style={{flexDirection: 'row', marginTop: 10}}>
+          <Text style={{width: '60%', marginLeft: 8}}>포두부 라자냐</Text>
+          <Text style={{width: '60%'}}>해초면 탕평채</Text>
+        </View>
+      </View>
+
       {/* 문 앞까지 신선하게 배너 */}
       <Image
         source={require('../images/banner3.jpg')}
@@ -492,7 +639,7 @@ const Home = props => {
       />
       <View
         style={{
-          backgroundColor: '#E1EAFA',
+          backgroundColor: '#EEF0FF',
           width: '100%',
           height: 360,
         }}>
@@ -561,7 +708,7 @@ const Home = props => {
           <Text style={[styles.bottomText]}>
             카카오톡{' '}
             <Text style={[styles.bottomText, {color: '#5f0080'}]}>
-              @마켓컬리
+              @마켓컬리{' '}
             </Text>
             <Text style={[styles.bottomText]}>
               친구 추가하고 소식과 혜택을 받아보세요
@@ -626,4 +773,5 @@ const styles = StyleSheet.create({
 탭 활용 = 메인 이벤트 이미지
 플랫리스트 = 상품들
 모먼트 = 남은 시간 (특가)
-네비게이션 = 각 페이지 + SNS */
+네비게이션 = 각 페이지 + SNS 
+드래그 프리(크롬 익스텐션) */
